@@ -12,7 +12,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Goke', link: '/goke/index' },
       { text: 'Linux', link: '/linux/index' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Trivia', link: '/trivia/index' }
     ],
 
     sidebar: {
@@ -68,15 +68,61 @@ export default defineConfig({
             { text: '常用 bashrc 配置', link: '/linux/linux开发常用bashrc配置' },
           ]
         },
-      ],
-      '/': [
         {
-          text: 'Examples',
+          text: '开发工具',
+          collapsed: false,
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
+            { text: 'gperf 使用', link: '/linux/gperf使用' },
+            { text: 'Node.js 安装和使用', link: '/linux/nodejs安装和使用' },
           ]
-        }
+        },
+        {
+          text: '网络服务',
+          collapsed: false,
+          items: [
+            { text: 'NFS 安装和使用', link: '/linux/nfs安装和使用' },
+            { text: 'Nginx 安装和使用', link: '/linux/nginx安装和使用' },
+          ]
+        },
+        {
+          text: '系统管理',
+          collapsed: false,
+          items: [
+            { text: 'UFW 使用', link: '/linux/ufw使用' },
+            { text: 'TC 流控', link: '/linux/tc流控' },
+          ]
+        },
+      ],
+      '/trivia/': [
+        {
+          text: '杂谈笔记',
+          items: [
+            { text: '总览', link: '/trivia/index' },
+          ]
+        },
+        {
+          text: '自建服务',
+          collapsed: false,
+          items: [
+            { text: 'Docker 搭建 NextCloud', link: '/trivia/docker搭建nextcloud' },
+            { text: 'NextCloud 安装和使用', link: '/trivia/nextcloud安装和使用' },
+            { text: 'qBittorrent 使用', link: '/trivia/qbittorrent使用' },
+          ]
+        },
+        {
+          text: '系统安全',
+          collapsed: false,
+          items: [
+            { text: 'SSH 多次登录失败加入黑名单', link: '/trivia/ssh多次登录失败加入黑名单' },
+          ]
+        },
+        {
+          text: '系统管理',
+          collapsed: false,
+          items: [
+            { text: 'Windows 激活', link: '/trivia/windows激活' },
+          ]
+        },
       ]
     },
 
