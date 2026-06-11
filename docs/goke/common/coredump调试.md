@@ -1,61 +1,63 @@
-# core dump 调试
+## 一、Kernel 配置
 
-## 1. kernel 配置
+### kernel 4.9
 
-进入 menuconfig，以 xm72010200_tiny_defconfig 为例
-
-搜索以下配置并打开
+打开以下内核配置
 
 ```
 CONFIG_ELF_CORE
 CONFIG_CRASH_DUMP
 CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS
 CONFIG_PROC_VMCORE
-```
-
-并确认以下配置已打开
-
-```
 CONFIG_COREDUMP
 ```
 
+### kernel 5.10
 
-
-## 2. 设置 coredump 转存路径
-
-根据实际情况修改以下路径
-
-```sh
-echo "/mnt/sdcard/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
+打开以下内核配置
+```
+CONFIG_COREDUMP=y
+CONFIG_ALLOW_DEV_COREDUMP=y
+CONFIG_ELF_CORE=y
 ```
 
 
 
-## 3. 设置 coredump 大小
+## 二、板端配置
 
-```sh
+设置转存路径，放开 coredump 大小限制
+
+```shell
+mount -t tmpfs tmpfs /tmp
+echo "/tmp/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
 ulimit -c unlimited
 ```
 
-核心太大的话，建议只保留部分数据
+或者设置转存路径到 sd 卡
 
-```sh
+```
+echo "/mnt/sdcard/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
+```
+
+核心太大的话，可以只保留部分数据
+
+```shell
 ulimit -c 1024
 ```
 
 
 
-## 4. 测试 coredump
+## 三、测试 coredump 生效
 
-shell 触发
+### shell 触发
 
-```sh
+```
 kill -s SIGSEGV $$
 ```
 
-程序触发
+### 简单 C 程序触发
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -70,19 +72,8 @@ int main(int argc, int *argv[])
 
 
 
-## 5. 编译 gdb
+## 四、可能遇到的问题
 
-在 sdk 根目录 `make menuconfig`
+### 1. 没有调试信息
 
-搜索 XMEDIA_GDB_SUPPORT 并打开
-
-保存配置，`make build`
-
-编译完成后，找到 gdb 工具 out/xm72010200/rootfs/bin/gdb 并复制到板端
-
-
-
-## 6. gdb 调试
-
-百度一下
-
+不要 strip

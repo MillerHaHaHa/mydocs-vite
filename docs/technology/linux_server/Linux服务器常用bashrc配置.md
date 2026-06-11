@@ -1,4 +1,4 @@
-# linux 开发常用 bashrc 配置
+# Linux 服务器常用 bashrc 配置
 
 ```
 alias ll='ls -alF'

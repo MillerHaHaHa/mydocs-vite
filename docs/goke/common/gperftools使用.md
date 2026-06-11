@@ -1,8 +1,8 @@
 # gperftools 使用
 
-## 内存检测
+## 1、内存检测
 
-## 1、使用方法 - 预加载方式
+### 1.1 使用方法 - 预加载方式
 
 **链接库**
 
@@ -36,7 +36,7 @@ HEAPCHECK=normal LD_PRELOAD="/system/lib/libtcmalloc.so" ./build_linux/linux_out
 killall -12 linux_out
 ```
 
-## 2、使用方法 - 头文件方式
+### 1.2 使用方法 - 头文件方式
 
 **包含头文件**
 

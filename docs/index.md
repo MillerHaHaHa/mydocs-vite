@@ -4,29 +4,29 @@ layout: home
 hero:
   name: "牛马人生"
   text: "嵌入式开发工作笔记"
-  tagline: 记录 Goke 平台、Linux 系统等嵌入式开发中的踩坑和经验
+  tagline: 记录 Goke 平台、嵌入式开发、Linux 服务器等开发中的踩坑和经验
   actions:
     - theme: brand
       text: Goke 文档
       link: /goke/index
     - theme: alt
-      text: Linux 笔记
-      link: /linux/index
+      text: 技术笔记
+      link: /technology/index
     - theme: alt
       text: 杂谈笔记
       link: /trivia/index
 
 features:
   - title: 🛠 Goke 开发文档
-    details: 国科微平台的开发笔记，涵盖 Common 通用配置、V500 系列和 7206V1 系列的内核配置、驱动适配、调试方法等。
+    details: 国科微平台的开发笔记，涵盖 Common 通用配置（系统配置、调试工具、外设驱动、系统移植）、V500 系列和 7606V1 系列的内核配置、驱动适配、调试方法等。
     link: /goke/index
     linkText: 查看 Goke 文档
-  - title: 🐧 Linux 开发笔记
-    details: Linux 开发环境配置、Shell 配置、开发工具（gperf/Node.js）、网络服务（NFS/Nginx）、系统管理（UFW/TC）等实用笔记。
-    link: /linux/index
-    linkText: 查看 Linux 笔记
+  - title: 🔧 技术笔记
+    details: 嵌入式开发（RaspberryPi、OpenIPC、HT1621 等）和 Linux 服务器配置（NFS、Nginx、Samba、SSH 防爆破等）的实用笔记。
+    link: /technology/index
+    linkText: 查看技术笔记
   - title: 📦 杂谈笔记
-    details: 自建服务（Docker/NextCloud/qBittorrent）、系统安全（SSH防爆破）、系统管理（Windows激活）等各类工具与服务的记录。
+    details: Windows 激活等各类工具与系统管理的杂项记录。
     link: /trivia/index
     linkText: 查看杂谈笔记
   - title: 📝 关于本站

@@ -43,3 +43,7 @@ crontab -e
 ```
 * */1 * * * sudo bash /usr/local/script/ssh_deny.sh
 ```
+
+### 3. 参考
+
+> https://blog.csdn.net/weixin_52270081/article/details/121496140
