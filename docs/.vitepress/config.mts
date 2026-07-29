@@ -55,6 +55,8 @@ export default defineConfig({
             { text: '配置 USB 网卡', link: '/goke/common/配置USB网卡' },
             { text: '配置 USB 虚拟 U 盘', link: '/goke/common/配置USB虚拟U盘' },
             { text: 'WiFi 常规配置', link: '/goke/common/wifi常规配置' },
+            { text: 'RTL8189 调试笔记', link: '/goke/common/rtl8189调试笔记' },
+            { text: '编译 wpa_supplicant 和 hostapd', link: '/goke/common/编译wpa_supplicant和hostapd' },
             { text: 'ffmpeg 常用命令', link: '/goke/common/ffmpeg常用命令' },
             { text: '启越调屏 PINMUX', link: '/goke/common/启越调屏PINMUX' },
             { text: '开机画面调试', link: '/goke/common/开机画面调试' },
@@ -64,7 +66,7 @@ export default defineConfig({
           text: 'Common - 系统移植',
           collapsed: true,
           items: [
-            { text: 'Ubuntu 22.04 移植笔记', link: '/goke/common/ubuntu2204移植笔记' },
+            { text: 'Ubuntu 高版本移植笔记', link: '/goke/common/ubuntu高版本移植笔记' },
             { text: 'BlueZ 移植', link: '/goke/common/bluez移植' },
             { text: '快启 buildin 版本新增驱动', link: '/goke/common/快启buildin版本新增驱动' },
             { text: 'TFTP 烧录', link: '/goke/common/tftp烧录' },
@@ -92,6 +94,13 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '7606V1 调整 Flash 分区', link: '/goke/7606v1/7606v1调整flash分区' },
+          ]
+        },
+        {
+          text: '7206V1 系列',
+          collapsed: true,
+          items: [
+            { text: 'VENC Ringbuf Full 问题', link: '/goke/7206v1/venc ringbuf full 问题' },
           ]
         },
       ],

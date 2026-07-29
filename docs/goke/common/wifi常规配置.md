@@ -119,3 +119,28 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 ## 5. 编译 wpa_supplicant
 
 https://blog.csdn.net/Turix/article/details/112910483
+
+## 6. iperf 工具使用
+
+编译 iperf 配置
+
+```sh
+./configure --host=arm-gcc7.3-linux-musleabi --prefix=$PWD/.install
+```
+
+设备端
+
+```sh
+iperf3 -c 172.17.140.236 -i 1 -t 10 -u -b 10m
+```
+
+```sh
+iperf3 -c 172.17.140.236 -i 1 -u -V -d
+```
+
+配测端
+
+```sh
+iperf3 -s -i 1
+```
+
