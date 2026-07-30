@@ -71,7 +71,7 @@ features:
 
 | 文档 | 说明 |
 |------|------|
-| [Ubuntu 22.04 移植笔记](./common/ubuntu2204移植笔记.md) | Ubuntu 22.04 系统移植记录 |
+| [Ubuntu 高版本移植笔记](./common/ubuntu高版本移植笔记.md) | Ubuntu 22.04/24.04 系统移植记录 |
 | [BlueZ 移植](./common/bluez移植.md) | BlueZ 蓝牙协议栈的移植 |
 | [快启 buildin 版本新增驱动](./common/快启buildin版本新增驱动.md) | 快启版本中添加内置驱动 |
 | [TFTP 烧录](./common/tftp烧录.md) | 通过 TFTP 进行固件烧录 |

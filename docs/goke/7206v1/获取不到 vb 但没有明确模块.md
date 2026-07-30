@@ -3,9 +3,9 @@
 
 logmpp 提示获取不到 VB，但没有明确是哪个模块获取不到。
 
-![logmpp 日志：获取不到 VB](/mydocs-vite/image/logmpp-vb分配失败日志.png)
+![logmpp 日志：获取不到 VB](../../image/logmpp-vb分配失败日志.png)
 
-## 可能原因1
+## 可能原因
 
 VENC 编码优先级不够高，一直被前级抢占资源。
 

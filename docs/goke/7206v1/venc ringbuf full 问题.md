@@ -1,6 +1,6 @@
 # 编码遇到 ring buf full 的问题
 
-![ringbuf full 错误日志](/mydocs-vite/image/venc-ringbuf-full错误.png)
+![ringbuf full 错误日志](../../image/venc-ringbuf-full错误.png)
 
 ## 原因
 
@@ -18,6 +18,6 @@ VPSS 处理速度太快，而 VENC 编码速度跟不上，导致 VPSS 的数据
    echo "263000" > /sys/devices/viproc/devfreq/viproc/userspace/set_freq
    ```
 
-   ![VPSS 降频调节](/mydocs-vite/image/vpss降频调节.png)
+   ![VPSS 降频调节](../../image/vpss降频调节.png)
 
    > **注意**：VENC 的默认工作频率已经是最大值，无法再提升，因此只能从 VPSS 侧进行降频调节。
