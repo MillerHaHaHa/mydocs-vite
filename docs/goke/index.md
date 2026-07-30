@@ -32,6 +32,10 @@ features:
     details: 7606V1 平台的 Flash 分区调整及相关开发笔记。
     link: /goke/7606v1/7606v1调整flash分区
     linkText: 浏览 7606V1 文档
+  - title: 🔧 7206V1 系列
+    details: VENC 编码调试（ringbuf full、VB 分配）、7206V1 平台开发调试笔记。
+    link: /goke/7206v1/venc ringbuf full 问题
+    linkText: 浏览 7206V1 文档
 ---
 
 ## 📚 文档目录
