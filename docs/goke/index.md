@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: 7606V1 系列
       link: /goke/7606v1/7606v1调整flash分区
+    - theme: alt
+      text: 7206V1 系列
+      link: /goke/7206v1/venc ringbuf full 问题
 
 features:
   - title: 🛠 Common - 通用文档
@@ -96,3 +99,11 @@ features:
 | 文档 | 说明 |
 |------|------|
 | [7606V1 调整 Flash 分区](./7606v1/7606v1调整flash分区.md) | 7606V1 平台的 Flash 分区调整方法 |
+
+### 🔧 7206V1 系列
+
+| 文档 | 说明 |
+|------|------|
+| [VENC Ringbuf Full 问题](./7206v1/venc%20ringbuf%20full%20问题.md) | VENC 编码 ring buffer 满的问题分析与解决 |
+| [获取不到 VB 但没有明确模块](./7206v1/获取不到%20vb%20但没有明确模块.md) | logmpp 提示获取不到 VB 但未指定模块的排查 |
+|
