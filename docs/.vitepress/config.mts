@@ -101,6 +101,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'VENC Ringbuf Full 问题', link: '/goke/7206v1/venc ringbuf full 问题' },
+            { text: '获取不到 VB 但没有明确模块', link: '/goke/7206v1/获取不到 vb 但没有明确模块' },
           ]
         },
       ],
