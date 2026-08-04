@@ -3,22 +3,29 @@
 ## 1. 修改 env
 
 1）修改 bootargs
-
+```shell
 bootargs=mem=32M console=ttyAMA0,115200 no_console_suspend root=/dev/mtdblock4 rootfstype=jffs2 rw mtdparts=sfc:512K(boot),256K(bootargs),256K(bl31),4M(kernel),11M(rootfs) earlycon=pl011,mmio32,0x12040000
+```
 
 =>
 
+```
 bootargs=mem=60M console=ttyAMA0,115200 no_console_suspend root=/dev/mtdblock4 rootfstype=jffs2 rw mtdparts=sfc:256K(boot),128K(bootargs),128K(bl31),4M(kernel),-(rootfs) earlycon=pl011,mmio32,0x12040000
+```
 
 ------
 
 2）修改 bootcmd
 
+```
 bootcmd=xmediaapp;sf probe 0;sf read 0x40008000 0xC0000 0x40000;sf read 0x40FFFFC0 0x100000 0x400000;bootm 0x40FFFFC0
+```
 
 =>
 
+```
 bootcmd=xmediaapp;sf probe 0;sf read 0x40008000 0x60000 0x20000;sf read 0x40FFFFC0 0x80000 0x400000;bootm 0x40FFFFC0
+```
 
 *参数说明*：
 

@@ -87,6 +87,8 @@ export default defineConfig({
             { text: 'SDIO WiFi 驱动适配', link: '/goke/v500/sdiowifi驱动适配' },
             { text: 'scan 移植笔记', link: '/goke/v500/scan移植笔记' },
             { text: 'V500 开启 SPI DMA 配置', link: '/goke/v500/v500开启spi dma配置' },
+            { text: 'DVP Sensor 适配', link: '/goke/v500/DVP Sensor适配' },
+            { text: 'Sensor Sample 适配笔记', link: '/goke/v500/sensor sample 适配笔记' },
           ]
         },
         {
