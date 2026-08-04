@@ -106,6 +106,13 @@ export default defineConfig({
             { text: '获取不到 VB 但没有明确模块', link: '/goke/7206v1/获取不到 vb 但没有明确模块' },
           ]
         },
+        {
+          text: '7203V1 系列',
+          collapsed: true,
+          items: [
+            { text: 'Sensor 调试', link: '/goke/7203v1/sensor调试' },
+          ]
+        },
       ],
       '/technology/': [
         {

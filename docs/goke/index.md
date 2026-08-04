@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: 7206V1 系列
       link: /goke/7206v1/venc ringbuf full 问题
+    - theme: alt
+      text: 7203V1 系列
+      link: /goke/7203v1/sensor调试
 
 features:
   - title: 🛠 Common - 通用文档
@@ -36,6 +39,10 @@ features:
     details: VENC 编码调试（ringbuf full、VB 分配）、7206V1 平台开发调试笔记。
     link: /goke/7206v1/venc ringbuf full 问题
     linkText: 浏览 7206V1 文档
+  - title: 🔧 7203V1 系列
+    details: 7203V1 平台 Sensor 调试笔记（I2C 引脚、时钟、复位与寄存器读写）。
+    link: /goke/7203v1/sensor调试
+    linkText: 浏览 7203V1 文档
 ---
 
 ## 📚 文档目录
@@ -110,4 +117,9 @@ features:
 |------|------|
 | [VENC Ringbuf Full 问题](./7206v1/venc%20ringbuf%20full%20问题.md) | VENC 编码 ring buffer 满的问题分析与解决 |
 | [获取不到 VB 但没有明确模块](./7206v1/获取不到%20vb%20但没有明确模块.md) | logmpp 提示获取不到 VB 但未指定模块的排查 |
-|
+
+### 🔧 7203V1 系列
+
+| 文档 | 说明 |
+|------|------|
+| [Sensor 调试](./7203v1/sensor调试.md) | 7203V1 平台 Sensor 调试笔记（I2C 引脚、时钟、复位与寄存器读写） |
