@@ -1,0 +1,42 @@
+import{_ as n,o as a,c as p,a4 as l}from"./chunks/framework.DAe4SYBh.js";const o=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"goke/v500/76050100&72050300典型LCD和WiFi管脚配置.md","filePath":"goke/v500/76050100&72050300典型LCD和WiFi管脚配置.md"}'),i={name:"goke/v500/76050100&72050300典型LCD和WiFi管脚配置.md"};function e(c,s,m,x,t,C){return a(),p("div",null,[...s[0]||(s[0]=[l(`<h2 id="lcd" tabindex="-1">LCD <a class="header-anchor" href="#lcd" aria-label="Permalink to “LCD”">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>#LCD_CLK</span></span>
+<span class="line"><span>xmmm 0x112C0074 0x1064</span></span>
+<span class="line"><span>#LCD_DE</span></span>
+<span class="line"><span>xmmm 0x112C0068 0x1024</span></span>
+<span class="line"><span>#LCD_VS</span></span>
+<span class="line"><span>xmmm 0x112C006C 0x1024</span></span>
+<span class="line"><span>#LCD_HS</span></span>
+<span class="line"><span>xmmm 0x112C0070 0x1024</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#LCD_DATA0</span></span>
+<span class="line"><span>xmmm 0x112C0078 0x1024</span></span>
+<span class="line"><span>#LCD_DATA1</span></span>
+<span class="line"><span>xmmm 0x112C007C 0x1024</span></span>
+<span class="line"><span>#LCD_DATA2</span></span>
+<span class="line"><span>xmmm 0x112C0080 0x1024</span></span>
+<span class="line"><span>#LCD_DATA3</span></span>
+<span class="line"><span>xmmm 0x112C0084 0x1024</span></span>
+<span class="line"><span>#LCD_DATA4</span></span>
+<span class="line"><span>xmmm 0x112C0088 0x1024</span></span>
+<span class="line"><span>#LCD_DATA5</span></span>
+<span class="line"><span>xmmm 0x112C008C 0x1024</span></span>
+<span class="line"><span>#LCD_DATA6</span></span>
+<span class="line"><span>#xmmm 0x112C0090 0x1024</span></span>
+<span class="line"><span>#LCD_DATA7</span></span>
+<span class="line"><span>#xmmm 0x112C0094 0x1024</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>insmod xm_ssp_st7789_ex.ko</span></span></code></pre></div><h2 id="wi-fi-sdio" tabindex="-1">Wi-Fi SDIO <a class="header-anchor" href="#wi-fi-sdio" aria-label="Permalink to “Wi-Fi SDIO”">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span># SDIO1_CCLK_OUT</span></span>
+<span class="line"><span>xmmm 0x100C0060 0x1D54</span></span>
+<span class="line"><span># SDIO1_CCMD</span></span>
+<span class="line"><span>xmmm 0x100C0064 0x1174</span></span>
+<span class="line"><span># SDIO1_CDATA3</span></span>
+<span class="line"><span>xmmm 0x100C0074 0x1174</span></span>
+<span class="line"><span># SDIO1_CDATA2</span></span>
+<span class="line"><span>xmmm 0x100C0070 0x1174</span></span>
+<span class="line"><span># SDIO1_CDATA1</span></span>
+<span class="line"><span>xmmm 0x100C006C 0x1174</span></span>
+<span class="line"><span># SDIO1_CDATA0</span></span>
+<span class="line"><span>xmmm 0x100C0068 0x1174</span></span>
+<span class="line"><span># GPIO7_0 in uboot</span></span>
+<span class="line"><span>xmmm 0x112C0058 0x1120</span></span>
+<span class="line"><span># HOST_WAKEUP_WL</span></span>
+<span class="line"><span>xmmm 0x100C0088 0x1100</span></span></code></pre></div>`,4)])])}const r=n(i,[["render",e]]);export{o as __pageData,r as default};
