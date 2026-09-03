@@ -31,7 +31,7 @@ ffplay -vcodec h264_qsv -fflags nobuffer -flags low_delay -framedrop -rtsp_trans
 ```
 
 ```
-ffplay -vcodec hevc_qsv -fflags nobuffer -flags low_delay -framedrop -rtsp_transport tcp -analyzeduration 100 -probesize 32 -an -nostats -x 1920 -y 1080 -top 30 -i "rtsp://192.168.145.122:554/livestream/0"
+ffplay -vcodec hevc_qsv -fflags nobuffer -flags low_delay -framedrop -rtsp_transport tcp -analyzeduration 100 -probesize 32 -an -nostats -i "rtsp://192.168.145.122:554/livestream/0"
 ```
 
 ```
@@ -41,6 +41,15 @@ ffplay -vcodec hevc_qsv -fflags nobuffer -flags low_delay -framedrop -rtsp_trans
 ```
 ffplay -vcodec hevc_cuvid -fflags nobuffer -flags low_delay -framedrop -rtsp_transport tcp -analyzeduration 0 -probesize 32768 -an -nostats -i rtsp://192.168.0.117:8554/h265live
 ```
+
+
+延迟小
+
+```
+ffplay -vcodec hevc_qsv -threads 0 -fflags nobuffer -flags low_delay -framedrop -rtsp_transport udp -analyzeduration 0 -probesize 32 -an -nostats -max_delay 0 -sync ext -i "rtsp://192.168.145.122:554/livestream/0"
+```
+
+
 
 #### 输出 video 节点到 framebuffer
 

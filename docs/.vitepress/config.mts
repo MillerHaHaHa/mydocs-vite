@@ -33,6 +33,7 @@ export default defineConfig({
             { text: '调整内存和 MMZ 分配', link: '/goke/common/调整内存和MMZ分配' },
             { text: 'flash 块大小调整', link: '/goke/common/flash块大小调整' },
             { text: '设置登录密码', link: '/goke/common/设置登录密码' },
+            { text: '低内存卡顿优化', link: '/goke/common/低内存卡顿优化' },
           ]
         },
         {
