@@ -32,6 +32,7 @@ export default defineConfig({
             { text: '去掉 bootargs 分区', link: '/goke/common/去掉bootargs分区' },
             { text: '调整内存和 MMZ 分配', link: '/goke/common/调整内存和MMZ分配' },
             { text: 'flash 块大小调整', link: '/goke/common/flash块大小调整' },
+            { text: 'flash 固件大小优化', link: '/goke/common/flash固件大小优化' },
             { text: '设置登录密码', link: '/goke/common/设置登录密码' },
             { text: '低内存卡顿优化', link: '/goke/common/低内存卡顿优化' },
           ]
@@ -78,6 +79,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'IPC 常用名词', link: '/goke/common/IPC常用名词' },
+            { text: '小白客户基础流程', link: '/goke/common/小白客户基础流程' },
           ]
         },
         {
@@ -105,6 +107,8 @@ export default defineConfig({
           items: [
             { text: 'VENC Ringbuf Full 问题', link: '/goke/7206v1/venc ringbuf full 问题' },
             { text: '获取不到 VB 但没有明确模块', link: '/goke/7206v1/获取不到 vb 但没有明确模块' },
+            { text: 'MMZ 多 Zone 用法', link: '/goke/7206v1/MMZ多Zone用法' },
+            { text: '内核裁剪', link: '/goke/7206v1/内核裁剪' },
           ]
         },
         {

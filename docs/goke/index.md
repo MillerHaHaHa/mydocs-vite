@@ -56,6 +56,7 @@ features:
 | [去掉 bootargs 分区](./common/去掉bootargs分区.md) | 移除 bootargs 分区的操作指南 |
 | [调整内存和 MMZ 分配](./common/调整内存和MMZ分配.md) | 调整内存与 MMZ 区域大小 |
 | [flash 块大小调整](./common/flash块大小调整.md) | Flash 块大小的修改方法 |
+| [flash 固件大小优化](./common/flash固件大小优化.md) | Flash 固件/可执行文件体积优化 |
 | [设置登录密码](./common/设置登录密码.md) | 设置和修改板端登录密码 |
 
 ### 🔍 Common - 调试与工具
@@ -95,6 +96,7 @@ features:
 | 文档 | 说明 |
 |------|------|
 | [IPC 常用名词](./common/IPC常用名词.md) | IPC（Inter-Process Communication）相关术语和概念 |
+| [小白客户基础流程](./common/小白客户基础流程.md) | 新客户上手开发板的基础操作流程 |
 
 ### 📡 V500 系列
 
@@ -117,6 +119,8 @@ features:
 |------|------|
 | [VENC Ringbuf Full 问题](./7206v1/venc%20ringbuf%20full%20问题.md) | VENC 编码 ring buffer 满的问题分析与解决 |
 | [获取不到 VB 但没有明确模块](./7206v1/获取不到%20vb%20但没有明确模块.md) | logmpp 提示获取不到 VB 但未指定模块的排查 |
+| [MMZ 多 Zone 用法](./7206v1/MMZ多Zone用法.md) | 7206 芯片拆分多个 MMZ Zone 池并在 xcam 中使用的配置步骤 |
+| [内核裁剪](./7206v1/内核裁剪.md) | 内核各配置项的内存占用与裁剪建议 |
 
 ### 🔧 7203V1 系列
 
